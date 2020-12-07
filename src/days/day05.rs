@@ -1,7 +1,7 @@
 use std::fs;
 
 pub fn run() {
-    let file = fs::read_to_string("inputs/day05.txt").expect("Failed to read file");
+    let file = fs::read_to_string("inputs/test05.txt").expect("Failed to read file");
 
     // Part 1
     let mut seats: Vec<Seat> = file.lines().map(|line| find_seat(line)).collect();

@@ -113,7 +113,7 @@ impl Passport {
 
     fn check_byr(&mut self) {
         if self.byr < 1920 || self.byr > 2002 {
-           self.valid = false;
+            self.valid = false;
         }
     }
 

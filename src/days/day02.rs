@@ -37,7 +37,7 @@ pub fn run() {
 
         let pos_1 = split_line[0].parse::<usize>().expect("Could not parse to usize");
         let pos_2 = split_line[1].parse::<usize>().expect("Could not parse to usize");
-        let letter = split_line[2].parse().expect("Could not parse to char");
+        let letter: char = split_line[2].parse().expect("Could not parse to char");
         let password = split_line[3];
         
         if password.chars().nth(pos_1 - 1).unwrap() == letter && password.chars().nth(pos_2 - 1).unwrap() != letter {
